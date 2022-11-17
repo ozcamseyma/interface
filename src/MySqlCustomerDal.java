@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class MySqlCustomerDal {
+public class MySqlCustomerDal implements ICustomerDal, IRepository{
+
+    @Override
+    public void add() {
+        System.out.println("My SQL eklendi.");
+    }
 }
